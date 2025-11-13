@@ -44,7 +44,27 @@ Technique to run llms locally in an android device
     Enter your prompts and let the LLM generate response for you.
     
     Tip: You can enable dark theme in the settings from the llama.cpp localhost page.
-10. Use ```ctrl + c``` to quit llama.cpp server in termux. 
+10. Use ```ctrl + c``` to quit llama.cpp server in termux.
+
+# About Testing
+The same is tested on a midrange android device with 6 GB Ram and another Higher end device with 12 GB Ram, with significant performance in both the cases.
+
+# Storage requirements
+Current ~2.86 GiB to 3 GiB storage is required in termux for llama.cpp runtime, build files and compilation dependencies
+The storage space for model is separate.
+
+# Model selection guide
+
+llama.cpp runtime primarily supports gguf models.
+
+For initial testing purpose you can use a light weight model like gemma3 270m parameters to verify everything works correctly.
+Ideally models upto 3b parameters or higher should work, if your device have sufficient RAM. Though 1b parameters models also provide good experience and they seem to be optimised for this use case.
+You can use Quantised models like Q4, Q8 instead of half / full precision like F16 or F32 to reduce RAM usage and offer better performance and overall better efficiency. Quantised models even require less storage space.
+
+Try experimenting with different models and share your observations in the issues.
+
+
+
     
     
     
