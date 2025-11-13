@@ -63,6 +63,17 @@ You can use Quantised models like Q4, Q8 instead of half / full precision like F
 
 Try experimenting with different models and share your observations in the issues.
 
+# Screenshots
+
+![Termux running llama.cpp server with a model](Screenshot_termux_model_running.png) 
+Termux running llama.cpp server with a model
+
+![llama.cpp interface on localhost with a model running](llama_cpp_server_android_running.png) 
+llama.cpp interface on localhost with a model running
+
+![Prompt and response from a local llm running on llama.cpp server](llama_cpp_server_android_prompt.png) 
+Prompt and response from a local llm running on llama.cpp server
+
 
 
     
